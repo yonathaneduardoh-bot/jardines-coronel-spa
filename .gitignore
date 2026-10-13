@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Dependency/build folders if tooling is added later
+node_modules/
+dist/
+build/
+
+# Editor and OS noise
+.vscode/
+.idea/
+
+# Netlify local config/cache
+.netlify/
