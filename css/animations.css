@@ -1,0 +1,163 @@
+/* ============================================
+   JARDINES CORONEL SPA — Animations
+   Efectos, hover y transiciones avanzadas
+   ============================================ */
+
+/* === INTERSECTION OBSERVER (scroll reveal) === */
+/* Las clases .fade-up y .fade-in están definidas en base.css */
+/* Este archivo controla animaciones extra y efectos especiales */
+
+/* === SHINE EFFECT en tarjetas === */
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+.card-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+  transition: none;
+  z-index: 1;
+}
+.card-shine:hover::before {
+  animation: shine 0.6s ease forwards;
+}
+@keyframes shine {
+  to { left: 125%; }
+}
+
+/* === COUNTER ANIMATION === */
+.counter-animate {
+  display: inline-block;
+}
+
+/* === TEXTO GRADIENTE === */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-green-light), var(--color-green-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === UNDERLINE ANIMADO === */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-green), var(--color-green-light));
+  border-radius: var(--radius-full);
+  transition: width 0.4s ease;
+}
+.animated-underline:hover::after { width: 100%; }
+
+/* === RIPPLE EN BOTONES === */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple-wave {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(0);
+  animation: ripple-anim 0.6s linear;
+  pointer-events: none;
+}
+@keyframes ripple-anim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* === LOADING SPINNER (para formulario) === */
+.btn-loading {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.8;
+}
+.btn-loading .btn-text { opacity: 0; }
+.btn-loading::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* === SUCCESS STATE DEL FORMULARIO === */
+.form-success {
+  text-align: center;
+  padding: var(--space-12) var(--space-8);
+  animation: pop-in 0.4s var(--transition-spring);
+}
+@keyframes pop-in {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+.form-success-icon {
+  width: 72px;
+  height: 72px;
+  background: var(--color-green-mint);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-5);
+}
+.form-success-icon svg {
+  width: 36px;
+  height: 36px;
+  color: var(--color-green-dark);
+}
+.form-success h3 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-3);
+}
+.form-success p {
+  color: var(--color-gray);
+  font-size: var(--text-base);
+}
+
+/* === HOVER GLOW en iconos de servicios === */
+@keyframes icon-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(45, 138, 90, 0); }
+  50%       { box-shadow: 0 0 20px 6px rgba(45, 138, 90, 0.25); }
+}
+.service-card:hover .service-icon-wrap {
+  animation: icon-glow 1.5s ease infinite;
+}
+
+/* === PARTICLE DOTS decorativos === */
+.dots-pattern {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(45,138,90,0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}

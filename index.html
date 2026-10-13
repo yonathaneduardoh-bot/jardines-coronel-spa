@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jardines Coronel SpA – Empresa de paisajismo y jardinería en la Región del Bio Bío. Diseño de jardines, instalación de pasto en rollo, riego automatizado y más." />
+  <meta name="keywords" content="paisajismo, jardinería, jardines, Bio Bío, Coronel, pasto en rollo, riego automatizado, áreas verdes" />
+  <meta name="author" content="Jardines Coronel SpA" />
+  <meta property="og:title" content="Jardines Coronel SpA | Paisajismo Bio Bío" />
+  <meta property="og:description" content="Transformamos tus espacios en jardines extraordinarios. Años de experiencia en el rubro del paisajismo y la jardinería en el Bio Bío." />
+  <meta property="og:type" content="website" />
+  <title>Jardines Coronel SpA | Paisajismo & Jardinería – Bio Bío</title>
+
+  <!-- CSS: capas en orden de cascada -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       NAVEGACIÓN
+  ================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Menú principal">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="nav-logo" aria-label="Jardines Coronel - Inicio">
+        <img src="assets/images/logo.png" alt="Logo Jardines Coronel SpA" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Jardines Coronel</span>
+          <span class="nav-brand-sub">SpA · Paisajismo</span>
+        </div>
+      </a>
+
+      <!-- Links desktop -->
+      <ul class="nav-links" role="list">
+        <li><a href="#inicio"      class="nav-link">Inicio</a></li>
+        <li><a href="#servicios"   class="nav-link">Servicios</a></li>
+        <li><a href="#nosotros"    class="nav-link">Nosotros</a></li>
+        <li><a href="#galeria"     class="nav-link">Galería</a></li>
+        <li><a href="#equipo"      class="nav-link">Equipo</a></li>
+        <li><a href="#contacto"    class="nav-link">Contacto</a></li>
+        <li><a href="#contacto"    class="nav-cta" id="nav-cta-btn">Cotizar ahora</a></li>
+      </ul>
+
+      <!-- Hamburger (móvil) -->
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Menú móvil">
+    <a href="#inicio"    class="nav-link">Inicio</a>
+    <a href="#servicios" class="nav-link">Servicios</a>
+    <a href="#nosotros"  class="nav-link">Nosotros</a>
+    <a href="#galeria"   class="nav-link">Galería</a>
+    <a href="#equipo"    class="nav-link">Equipo</a>
+    <a href="#contacto"  class="nav-link">Contacto</a>
+    <a href="#contacto"  class="btn btn-primary btn-sm" style="margin-top:8px;">Cotizar ahora</a>
+  </div>
+
+
+  <!-- ================================================
+       HERO
+  ================================================ -->
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- Dots decorativos -->
+    <div class="dots-pattern" style="top:10%;right:8%;opacity:0.6;" aria-hidden="true"></div>
+
+    <div class="hero-content container">
+
+      <div class="hero-badge fade-in">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Bio Bío · Coronel · Chile
+      </div>
+
+      <h1 class="hero-title fade-up delay-1" id="hero-title">
+        Transformamos tus espacios en
+        <span>jardines extraordinarios.</span>
+      </h1>
+
+      <p class="hero-subtitle fade-up delay-2">
+        Somos una pyme con años de experiencia en paisajismo y jardinería en la Región del Bio Bío.
+        Diseño, mantención y riego profesional a tu medida.
+      </p>
+
+      <div class="hero-actions fade-up delay-3">
+        <a href="#contacto" class="btn btn-primary" id="hero-cta-primary">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          Cotizar gratis
+        </a>
+        <a href="#galeria" class="btn btn-secondary" id="hero-cta-secondary">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Ver proyectos
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats fade-up delay-4" aria-label="Estadísticas de la empresa">
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-counter="10" data-suffix="+">10+</div>
+          <div class="hero-stat-label">Años de experiencia</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-counter="200" data-suffix="+">200+</div>
+          <div class="hero-stat-label">Proyectos realizados</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-counter="100" data-suffix="%">100%</div>
+          <div class="hero-stat-label">Clientes satisfechos</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Descubre más</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       SERVICIOS
+  ================================================ -->
+  <section class="services" id="servicios" aria-labelledby="services-title">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <span class="section-badge">Lo que hacemos</span>
+        <h2 class="section-title" id="services-title">Nuestros <span>Servicios</span></h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-subtitle">Ofrecemos soluciones integrales de jardinería y paisajismo para espacios residenciales y comerciales en el Bio Bío.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Servicio 1 -->
+        <article class="card service-card card-shine fade-up delay-1" id="servicio-preparacion">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Preparación de Suelo</h3>
+          <p class="service-desc">Realizamos trabajo técnico de preparación y acondicionamiento del terreno para garantizar el crecimiento óptimo de tu jardín.</p>
+        </article>
+
+        <!-- Servicio 2 -->
+        <article class="card service-card card-shine fade-up delay-2" id="servicio-pasto">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Pasto en Rollo</h3>
+          <p class="service-desc">Instalación profesional de pasto en rollo para obtener un césped verde y uniforme de forma rápida y duradera.</p>
+        </article>
+
+        <!-- Servicio 3 -->
+        <article class="card service-card card-shine fade-up delay-3" id="servicio-areas">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Mejoramiento de Áreas Verdes</h3>
+          <p class="service-desc">Transformamos y mejoramos tus áreas verdes existentes, recuperando espacios descuidados y dando nueva vida a tu jardín.</p>
+        </article>
+
+        <!-- Servicio 4 -->
+        <article class="card service-card card-shine fade-up delay-1" id="servicio-aguas">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Extracción de Aguas por Punteras</h3>
+          <p class="service-desc">Soluciones técnicas de drenaje y extracción de aguas estancadas para proteger tus espacios verdes y mejorar el suelo.</p>
+        </article>
+
+        <!-- Servicio 5 -->
+        <article class="card service-card card-shine fade-up delay-2" id="servicio-riego-auto">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Riego Automatizado</h3>
+          <p class="service-desc">Diseñamos e instalamos redes de riego automatizado para mantener tu jardín siempre hidratado, ahorrando agua y tiempo.</p>
+        </article>
+
+        <!-- Servicio 6 -->
+        <article class="card service-card card-shine fade-up delay-3" id="servicio-riego-hidro">
+          <div class="service-icon-wrap" aria-hidden="true">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Riego Hidráulico</h3>
+          <p class="service-desc">Instalación de sistemas hidráulicos de riego de alta eficiencia, adaptados a las necesidades específicas de cada proyecto.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       NOSOTROS
+  ================================================ -->
+  <section class="about" id="nosotros" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Imagen -->
+        <div class="about-image-wrap fade-in">
+          <img src="assets/images/about-team.png" alt="Equipo de Jardines Coronel trabajando en un jardín del Bio Bío" loading="lazy" />
+          <div class="about-image-badge">
+            <div class="about-badge-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="about-badge-title">10+ años</div>
+              <div class="about-badge-sub">de experiencia en Bio Bío</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="about-content fade-up">
+          <div class="section-header">
+            <span class="section-badge">¿Quiénes somos?</span>
+            <h2 class="section-title" id="about-title">Tu jardín, nuestra <span>pasión</span></h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">
+              Jardines Coronel SpA es una empresa familiar con años de experiencia en el rubro del Paisajismo y la Jardinería en la zona del Bio Bío.
+              Trabajamos con dedicación y profesionalismo para transformar cada espacio en un jardín que supere tus expectativas.
+            </p>
+          </div>
+
+          <div class="about-features" role="list">
+
+            <div class="about-feature" role="listitem">
+              <div class="about-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="about-feature-title">Pasión por los jardines</div>
+                <div class="about-feature-desc">Cada proyecto lo tratamos como único, con atención al detalle y amor por el trabajo bien hecho.</div>
+              </div>
+            </div>
+
+            <div class="about-feature" role="listitem">
+              <div class="about-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                </svg>
+              </div>
+              <div>
+                <div class="about-feature-title">Soluciones integrales</div>
+                <div class="about-feature-desc">Desde la preparación del suelo hasta el riego automatizado, somos tu empresa de jardines de principio a fin.</div>
+              </div>
+            </div>
+
+            <div class="about-feature" role="listitem">
+              <div class="about-feature-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="about-feature-title">Equipo comprometido</div>
+                <div class="about-feature-desc">Un equipo profesional listo para asesorarte y llevar tu visión a la realidad con honestidad y compromiso.</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="margin-top: var(--space-10);">
+            <a href="#contacto" class="btn btn-primary" id="about-cta">
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              Contáctanos hoy
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       STATS BANNER
+  ================================================ -->
+  <div class="stats-banner" aria-label="Estadísticas de Jardines Coronel">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box fade-up delay-1">
+          <div class="stat-number" data-counter="10" data-suffix="+">10+</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="stat-box fade-up delay-2">
+          <div class="stat-number" data-counter="200" data-suffix="+">200+</div>
+          <div class="stat-label">Proyectos completados</div>
+        </div>
+        <div class="stat-box fade-up delay-3">
+          <div class="stat-number" data-counter="6" data-suffix="">6</div>
+          <div class="stat-label">Servicios especializados</div>
+        </div>
+        <div class="stat-box fade-up delay-4">
+          <div class="stat-number" data-counter="3" data-suffix="">3</div>
+          <div class="stat-label">Expertos en tu equipo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================================================
+       GALERÍA
+  ================================================ -->
+  <section class="gallery" id="galeria" aria-labelledby="gallery-title">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <span class="section-badge">Nuestro trabajo</span>
+        <h2 class="section-title" id="gallery-title">Proyectos <span>realizados</span></h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-subtitle">Una muestra de los espacios verdes que hemos transformado en la Región del Bio Bío.</p>
+      </div>
+
+      <div class="gallery-grid" role="list" aria-label="Galería de proyectos">
+
+        <div class="gallery-card fade-in delay-1" role="listitem" tabindex="0" aria-label="Proyecto jardín con grava decorativa y piedras">
+          <img src="assets/images/gallery-1.png" alt="Jardín con grava negra, piedras decorativas y plantas ornamentales" loading="lazy" />
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-label">Jardín decorativo con grava</span>
+          </div>
+        </div>
+
+        <div class="gallery-card fade-in delay-2" role="listitem" tabindex="0" aria-label="Proyecto instalación de pasto en rollo">
+          <img src="assets/images/gallery-2.png" alt="Jardín residencial con pasto en rollo instalado por Jardines Coronel" loading="lazy" />
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-label">Instalación pasto en rollo</span>
+          </div>
+        </div>
+
+        <div class="gallery-card fade-in delay-3" role="listitem" tabindex="0" aria-label="Proyecto sistema de riego automatizado">
+          <img src="assets/images/gallery-3.png" alt="Sistema de riego automatizado instalado en jardín residencial" loading="lazy" />
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-label">Riego automatizado</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top: var(--space-10);" class="fade-up">
+        <a href="#contacto" class="btn btn-outline" id="gallery-cta">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          Quiero un proyecto así
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       TESTIMONIOS
+  ================================================ -->
+  <section class="testimonials" id="testimonios" aria-labelledby="testimonials-title">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <span class="section-badge">Lo que dicen nuestros clientes</span>
+        <h2 class="section-title" id="testimonials-title">Opiniones <span>reales</span></h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-subtitle">La satisfacción de nuestros clientes es nuestro mayor reconocimiento.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <article class="card testimonial-card card-shine fade-up delay-1">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testimonial-text">
+            "Excelente trabajo, el equipo de Jardines Coronel transformó completamente mi patio. El pasto quedó perfecto y el sistema de riego funciona de maravilla. ¡Muy recomendados!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">MR</div>
+            <div>
+              <div class="testimonial-name">María Rodríguez</div>
+              <div class="testimonial-location">Coronel, Bio Bío</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card testimonial-card card-shine fade-up delay-2">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testimonial-text">
+            "Contratamos a Jardines Coronel para mejorar las áreas verdes de nuestra empresa. El resultado superó todas nuestras expectativas. Profesionales, puntuales y muy detallistas."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">CP</div>
+            <div>
+              <div class="testimonial-name">Carlos Pérez</div>
+              <div class="testimonial-location">Concepción, Bio Bío</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card testimonial-card card-shine fade-up delay-3">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testimonial-text">
+            "Resolvieron el problema de aguas estancadas que teníamos hace años. Rápidos, eficientes y a muy buen precio. El jardín ahora luce espectacular durante todo el año."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">AG</div>
+            <div>
+              <div class="testimonial-name">Ana González</div>
+              <div class="testimonial-location">Lota, Bio Bío</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       EQUIPO
+  ================================================ -->
+  <section class="team" id="equipo" aria-labelledby="team-title">
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <span class="section-badge">Nuestro equipo</span>
+        <h2 class="section-title" id="team-title">Las personas detrás de <span>cada jardín</span></h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-subtitle">Un equipo comprometido, con experiencia y pasión por transformar espacios verdes en el Bio Bío.</p>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="card team-card fade-up delay-1" id="team-luis">
+          <div class="team-avatar" aria-hidden="true">LH</div>
+          <div class="team-name">Luis Henríquez V.</div>
+          <div class="team-role">Director & Paisajista</div>
+          <a href="tel:+56981929399" class="team-phone" aria-label="Llamar a Luis Henríquez">
+            <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            +56 9 8192 9399
+          </a>
+        </div>
+
+        <div class="card team-card fade-up delay-2" id="team-jc">
+          <div class="team-avatar" aria-hidden="true">JC</div>
+          <div class="team-name">Juan Carlos Valenzuela</div>
+          <div class="team-role">Especialista en Riego</div>
+          <a href="tel:+56933185923" class="team-phone" aria-label="Llamar a Juan Carlos Valenzuela">
+            <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            +56 9 3318 5923
+          </a>
+        </div>
+
+        <div class="card team-card fade-up delay-3" id="team-boris">
+          <div class="team-avatar" aria-hidden="true">BV</div>
+          <div class="team-name">Boris Valenzuela</div>
+          <div class="team-role">Técnico Paisajista</div>
+          <a href="tel:+56993127694" class="team-phone" aria-label="Llamar a Boris Valenzuela">
+            <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            +56 9 9312 7694
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       CONTACTO
+  ================================================ -->
+  <section class="contact" id="contacto" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-inner">
+
+        <!-- Info de contacto -->
+        <div class="contact-info fade-up">
+          <div class="section-header">
+            <span class="section-badge">Hablemos</span>
+            <h2 class="section-title" id="contact-title">Solicita tu <span>cotización</span></h2>
+            <div class="divider"></div>
+            <p class="section-subtitle" style="text-align:left; max-width:100%;">
+              Escríbenos por cualquiera de estos medios o completa el formulario. Te responderemos a la brevedad.
+            </p>
+          </div>
+
+          <div class="contact-items">
+
+            <a href="mailto:luish974@gmail.com" class="contact-item" id="contact-email" aria-label="Enviar email a Jardines Coronel">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">luish974@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="tel:+56981929399" class="contact-item" id="contact-phone-luis" aria-label="Llamar a Luis Henríquez">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Luis Henríquez V.</div>
+                <div class="contact-item-value">+56 9 8192 9399</div>
+              </div>
+            </a>
+
+            <a href="tel:+56933185923" class="contact-item" id="contact-phone-jc" aria-label="Llamar a Juan Carlos Valenzuela">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Juan Carlos Valenzuela</div>
+                <div class="contact-item-value">+56 9 3318 5923</div>
+              </div>
+            </a>
+
+            <a href="tel:+56993127694" class="contact-item" id="contact-phone-boris" aria-label="Llamar a Boris Valenzuela">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Boris Valenzuela</div>
+                <div class="contact-item-value">+56 9 9312 7694</div>
+              </div>
+            </a>
+
+            <div class="contact-item" style="cursor:default;">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Ubicación</div>
+                <div class="contact-item-value">Coronel, Región del Bio Bío</div>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="https://wa.me/56981929399?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio%20de%20jardiner%C3%ADa"
+             class="btn btn-whatsapp"
+             target="_blank"
+             rel="noopener noreferrer"
+             id="contact-whatsapp-btn"
+             aria-label="Contactar por WhatsApp">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.536 4.06 1.476 5.774L.051 23.944l6.299-1.404A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.008-1.376l-.36-.214-3.732.832.847-3.638-.235-.374A9.818 9.818 0 012.182 12c0-5.42 4.398-9.818 9.818-9.818 5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
+            </svg>
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact-form-card fade-up delay-2">
+          <h3 class="contact-form-title">Envíanos un mensaje</h3>
+          <p class="contact-form-sub">Cuéntanos sobre tu proyecto y te daremos una cotización sin costo.</p>
+
+          <div id="form-wrap">
+            <form id="contact-form" novalidate aria-label="Formulario de contacto">
+
+              <div class="form-group">
+                <label class="form-label" for="nombre">Nombre completo *</label>
+                <input class="form-input" type="text" id="nombre" name="nombre"
+                       placeholder="Ej: Juan González" required autocomplete="name" />
+              </div>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-4);">
+                <div class="form-group">
+                  <label class="form-label" for="email">Email *</label>
+                  <input class="form-input" type="email" id="email" name="email"
+                         placeholder="tu@email.com" required autocomplete="email" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="telefono">Teléfono</label>
+                  <input class="form-input" type="tel" id="telefono" name="telefono"
+                         placeholder="+56 9 XXXX XXXX" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="servicio">Servicio de interés</label>
+                <select class="form-input form-select" id="servicio" name="servicio">
+                  <option value="">Selecciona un servicio...</option>
+                  <option value="preparacion">Preparación de Suelo</option>
+                  <option value="pasto">Instalación de Pasto en Rollo</option>
+                  <option value="areas-verdes">Mejoramiento de Áreas Verdes</option>
+                  <option value="aguas">Extracción de Aguas por Punteras</option>
+                  <option value="riego-auto">Riego Automatizado</option>
+                  <option value="riego-hidro">Riego Hidráulico</option>
+                  <option value="otro">Otro / Consulta general</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="mensaje">Mensaje *</label>
+                <textarea class="form-textarea" id="mensaje" name="mensaje"
+                          placeholder="Cuéntanos sobre tu proyecto, tamaño del espacio, ubicación, etc." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;" id="form-submit-btn">
+                <span class="btn-text">
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                  Enviar mensaje
+                </span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <!-- Brand -->
+        <div>
+          <div class="footer-logo">
+            <img src="assets/images/logo.png" alt="Logo Jardines Coronel SpA" />
+            <span class="footer-brand">Jardines Coronel SpA</span>
+          </div>
+          <p class="footer-desc">
+            Empresa de paisajismo y jardinería con años de experiencia en la Región del Bio Bío.
+            Tu espacio verde, nuestra responsabilidad.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <div class="footer-col-title">Navegación</div>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#inicio"    class="footer-link">Inicio</a>
+            <a href="#servicios" class="footer-link">Servicios</a>
+            <a href="#nosotros"  class="footer-link">Nosotros</a>
+            <a href="#galeria"   class="footer-link">Galería</a>
+            <a href="#equipo"    class="footer-link">Equipo</a>
+            <a href="#contacto"  class="footer-link">Contacto</a>
+          </nav>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <div class="footer-col-title">Contacto</div>
+          <div class="footer-links">
+            <a href="mailto:luish974@gmail.com" class="footer-link">luish974@gmail.com</a>
+            <a href="tel:+56981929399" class="footer-link">+56 9 8192 9399</a>
+            <a href="tel:+56933185923" class="footer-link">+56 9 3318 5923</a>
+            <a href="tel:+56993127694" class="footer-link">+56 9 9312 7694</a>
+            <span class="footer-link" style="cursor:default;">Coronel, Bio Bío</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Jardines Coronel SpA · Todos los derechos reservados.</p>
+        <p class="footer-credits">Diseño web profesional · Bio Bío, Chile</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================================================
+       BOTÓN FLOTANTE WHATSAPP
+  ================================================ -->
+  <a href="https://wa.me/56981929399?text=Hola%2C%20me%20interesa%20cotizar%20un%20servicio%20de%20jardiner%C3%ADa"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     id="whatsapp-float-btn"
+     aria-label="Chatear por WhatsApp con Jardines Coronel">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.092.536 4.06 1.476 5.774L.051 23.944l6.299-1.404A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.008-1.376l-.36-.214-3.732.832.847-3.638-.235-.374A9.818 9.818 0 012.182 12c0-5.42 4.398-9.818 9.818-9.818 5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
+    </svg>
+  </a>
+
+
+  <!-- JS: capas en orden de dependencia -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+
+</body>
+</html>
